@@ -71,9 +71,7 @@ initialize the minimum distance found thus far
 
 loop over the known L*a*b* color values
 
-compute the distance between the current L*a*b*
-
-      color value and the mean of the image	
+compute the distance between the current L*a*b* color value and the mean of the image	
       
 if the distance is smaller than the current distance, then update the minimum distance
 
