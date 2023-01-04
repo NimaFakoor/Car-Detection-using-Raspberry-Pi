@@ -7,17 +7,26 @@
 
 
 A programmable computer hardware (Raspberry Pi)
+
 Camera Module (Raspberry Pi Camera Module)
+
 
 ## Software:
 
 
 any kernel can configuration the hardware (Raspberry Pi OS)
-Libraries:
+
+### Libraries:
+
+
 Python 3.9.4 (or any Default/Update installed Python on Pi OS)
+
 scipy (SciPy: Scientific Library for Python)
+
 numpy (NumPy is the fundamental package for array computing with Python.)
+
 opencv-python
+
 
 # Installing
 
@@ -32,6 +41,7 @@ Enter the commands to install all the libraries required for this project.
 
 
 After Installing all libraries connect the camera (picamera) to raspberry pi.
+
 Execution
 Once all the components are integrated with pi then run the following command for execution.
 
@@ -46,42 +56,79 @@ Expected Output
 
 
 function to get the centroid of the object
+
 function to detect vehicle/moving object 
+
 function to normalize the image so that the entire object has the same rgb value
+
 initialize color class
+
 convert the rgb color to lab colors (update the L*a*b* array and the color names list)
+
 function to label the car’s lab color to a particular color class
+
 initialize the minimum distance found thus far
+
 loop over the known L*a*b* color values
+
 compute the distance between the current L*a*b*
+
       color value and the mean of the image	
+      
 if the distance is smaller than the current distance, then update the minimum distance
+
 return the name of the color with the smallest distance
+
 initialize background object used for background elimination
+
 initialize frame counter to run the program in a while loop:
+
 resize the frame
+
 creating a copy of the frame
+
 applying background elimination
+
 additional image processing
+
 fill parts of image with small area
+
 remove noise
+
 dilate to merge adjacent objects in the feature space
+
 area threshold to further remove noise 
+
 initialize output color list
+
 detect contour and calculate the coordinates of the contours
+
 loop over each detected contour 
+
 extract the regions that contains car features
+
 normalize the region so as to obtain a uniform color.
+
 reshape the image to a linear form with 3-channels
+
 initialize centroids
+
 apply k-means clustering to detect prominent color in the object
+
 detect the centroid with densest cluster
+
 get the label of the car color
+
 draw rectangle over the detected car
+
 label each rectangle with the detected color of the car
+
 open file to write the output of each frame
+
 write into the file every 10 frames
+
 write detected car number 
+
 
 
 
@@ -152,9 +199,13 @@ this Software by Designed in a Functional Programming
 
 # Acknowledgments
 
+
 python developers and python community
+
 python
+
 Opencv-python
+
 
 @Amir-Mehrpanah
 
@@ -162,6 +213,9 @@ Opencv-python
 # References
 
 Python 3.9.4 documentation - https://docs.python.org/3/
+
 Open Source Computer Vision documentation - https://docs.opencv.org/master/
+
+
 ...
 
